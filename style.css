@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --primary-grey: #F5F5F7CC;
+  --primary-txt: #F5F5F7;
+  --secondary-txt: #1D1D1F;
+  --btn-bg: #0071E3;
+  --button-border: #2997FF;
+}
+html{
+  scroll-behavior: smooth;
+}
