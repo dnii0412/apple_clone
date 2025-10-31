@@ -13,13 +13,16 @@
 html{
   scroll-behavior: smooth;
 }
-/* body{} */
+body{
+  font-family: 'Inter';
+}
 
 header{
   width: 100%;
-  height: 5vh;
+  height: 4vh;
   padding: auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: var(--primary-grey);
@@ -45,4 +48,124 @@ header>nav>ul>li{
 .nav-icons{
   display: flex;
   gap: 32px;
+}
+.nav-headline{
+  width: 100%;
+  height: 100%;
+  height: 5vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* hero section */
+.hero{
+  width: 100%;
+  height: 70vh;
+  background-image: url(Public/assets/Background.png);
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.hero-1, .hero-2{
+  margin-top: 54px;
+  width: 405px;
+  height: 172px;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  gap: 16px;
+}
+.ip-16, .ip-16-2{
+  font-size: 52px;
+  font-weight: 600;
+  color: white;
+}
+.interlligence, .interlligence-2{
+  font-size: 24px;
+  font-weight: 400;
+  color: #F5F5F7;
+}
+.hero-cta-btns, .hero-cta-btns-2{
+  height: auto;
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+}
+.hero-cta-btns>button, .hero-cta-btns-2{
+  margin: auto;
+}
+.more-btn{
+  width: 124px;
+  height: 44px;
+  background-color: var(--btn-bg);
+  border-radius: 48px;
+  border: none;
+  color: white;
+}
+.buy-btn{
+  width: 68px ;
+  height: 44px;
+  border-color: var(--button-border);
+  background: none;
+  border-radius: 48px;
+  color: #2997FF;
+}
+
+/* second bg */
+.hero-second{
+  width: 100%;
+  height: 70vh;
+  background-image: url(Public/assets/Background2.png);
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.bg-2{
+  width: 100%;
+}
+
+.more-btn-2{
+  width: 124px;
+  height: 44px;
+  background-color: white;
+  border-radius: 48px;
+  border: none;
+  color: white;
+} 
+
+.buy-btn-2{
+  width: 68px;
+  height: 44px;
+  border: 1px solid white;
+  background: none;
+  border-radius: 48px;
+  color: white;
+}
+
+.section-3{
+  width: 100%;
+  height: 100%;
+}
+.section-3>img{
+  width: 100%;
+  height: 100%;
+}
+
+.section-4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.section-4{
+  width: 100%;
+  height: 100%;
 }
