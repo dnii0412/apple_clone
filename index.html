@@ -1,223 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Apple Clone</title>
-  <link rel="stylesheet" href="style.css"/>
-  <!-- Apple Icons (using SVG for logo, search, bag) -->
-  <script src="https://kit.fontawesome.com/e63f4ae073.js" crossorigin="anonymous"></script>
-  <!-- fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apple Clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Apple Icons (using SVG for logo, search, bag) -->
+    <script
+      src="https://kit.fontawesome.com/e63f4ae073.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <figure class="nav-logo">
+          <img src="Public//assets/logo.png" alt="apple_logo" />
+        </figure>
+        <ul class="nav-menu">
+          <li>Store</li>
+          <li>Mac</li>
+          <li>iPad</li>
+          <li>iPhone</li>
+          <li>Watch</li>
+          <li>Vision</li>
+          <li>Airpods</li>
+          <li>TV & Home</li>
+          <li>Entertainment</li>
+          <li>Accessrories</li>
+          <li>Support</li>
+        </ul>
+        <div class="nav-right">
+          <figure class="nav-icons">
+            <img src="Public/assets/search.png" alt="" />
+            <img src="Public/assets/shopping_bag.png" alt="" />
+          </figure>
+          <button class="hamburger-menu" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
 
-  <header>
-    <nav>
-      <figure class="nav-logo">
-        <img src="Public//assets/logo.png" alt="apple_logo">
-      </figure>
-      <ul>
-        <li>Store</li>
-        <li>Mac</li>
-        <li>iPad</li>
-        <li>iPhone</li>
-        <li>Watch</li>
-        <li>Vision</li>
-        <li>Airpods</li>
-        <li>TV & Home</li>
-        <li>Entertainment</li>
-        <li>Accessrories</li>
-        <li>Support</li>
-      </ul>
-      <figure class="nav-icons">
-        <img src="Public/assets/search.png" alt="">
-        <img src="Public/assets/shopping_bag.png" alt="">
-      </figure>
-    </nav>
-  </header>
+    <aside class="nav-headline">
+      <p>
+        We’re donating $5 to the Global Fund for every purchase made with
+        Apple&nbsp;Pay at Apple. Through 12/8.
+      </p>
+    </aside>
 
-  <aside class="nav-headline">
-    <p>We’re donating $5 to the Global Fund for every purchase made with Apple&nbsp;Pay at Apple. Through 12/8.</p>
-  </aside>
-
-  <main>
-
-    <!-- hero section -->
-    <section class="hero">
-      <aside class="cta">
-        <h3>iPhone 16 Pro</h3>
-        <p>Hello Apple Intelligence</p>
-        <div class="cta-buttons">
-          <button class="button-1">Learn More</button>
-          <button class="button-2">Buy</button>
-        </div> 
-      </aside>
-    </section>
-
-    <section class="second">
-      <!-- Add CTA here if you have a second hero image/text -->
-    </section>
-
-    <section class="third">
-      <!-- Add CTA here if you have a third hero image/text -->
-    </section>
-
-    <section class="grid">
-
-      <!-- iPad Air -->
-      <aside class="grid-item pad">
-        <div class="content">
-          <h3>iPad Air</h3>
-          <p>Two sizes. Faster chip. Does it all.</p>
+    <main>
+      <!-- hero section -->
+      <section class="hero">
+        <aside class="cta">
+          <h3>iPhone 16 Pro</h3>
+          <p>Hello Apple Intelligence</p>
           <div class="cta-buttons">
-            <button class="button-1">Learn more</button>
+            <button class="button-1">Learn More</button>
             <button class="button-2">Buy</button>
           </div>
-        </div>
-      </aside>
-
-      <!-- AirPods Pro 2 -->
-      <aside class="grid-item pod">
-        <div class="content">
-          <h3>AirPods Pro 2</h3>
-          <p>Now with a Hearing Aid feature.<sup>2</sup></p>
-          <div class="cta-buttons">
-            <button class="button-1">Learn more</button>
-            <button class="button-2">Buy</button>
-          </div>
-        </div>
-      </aside>
-
-      <!-- Apple Watch Series 10 -->
-      <aside class="grid-item watch">
-        <div class="content">
-          <div class="logo">
-            <span> WATCH</span>
-            <small>SERIES 10</small>
-          </div>
-          <p>Thinnest classic.</p>
-          <div class="cta-buttons">
-            <button class="button-1">Learn more</button>
-            <button class="button-2">Buy</button>
-          </div>
-        </div>
-      </aside>
-
-      <!-- MacBook Air -->
-      <aside class="grid-item macbook">
-        <div class="content">
-          <h3>MacBook Air</h3>
-          <p>Lean. Mean. M3 machine.</p>
-          <div class="cta-buttons">
-            <button class="button-1">Learn more</button>
-            <button class="button-2">Buy</button>
-          </div>
-        </div>
-      </aside>
-
-      <!-- Trade In -->
-      <aside class="grid-item trade">
-        <div class="content">
-          <div class="logo"> Trade In</div>
-          <p>Get $180–$650 in credit when you trade in iPhone 12 or higher.<sup>3</sup></p>
-          <div class="cta-buttons">
-            <button class="button-1">Get your estimate</button>
-          </div>
-        </div>
-      </aside>
-
-      <!-- Apple Card -->
-      <aside class="grid-item card">
-        <div class="content">
-          <div class="logo"> Card</div>
-          <p>Get up to 3% Daily Cash back with every purchase.</p>
-          <div class="cta-buttons">
-            <button class="button-1">Learn more</button>
-            <button class="button-2">Apply now</button>
-          </div>
-        </div>
-      </aside>
-
-    </section>
-
-  </main>
-
-  <!-- Apple TV+ Carousel Section -->
-  <section class="tv-carousel-section">
-    <div class="tv-carousel">
-      <figure>
-        <img src="Public/assets/scroll1.png" alt="">
-      </figure>
-
-      <figure class="figure-1">
-        <img src="Public/assets/scroll2.jpg" alt="">
-        <aside>
-          <p><span class="comedy-text">Comedy ·</span> Will they make history…or fake it?</p>
-          <button>Stream now</button>
         </aside>
-      </figure>
+      </section>
 
-      <figure>
-        <img src="Public/assets/scroll3.jpg" alt="">
-      </figure>
-    </div>
-    <!-- Carousel Navigation Dots -->
-    <div class="carousel-dots">
-      <span class="dot"></span>
-      <span class="dot active"></span>
-      <span class="dot"></span>
-    </div>
-  </section>
+      <section class="second">
+          <!-- <aside class="cta"></aside>
+        <h3>iPhone 16</h3>
+        <p>Hello Apple Intelligence</p>
 
-  <!-- Content Cards Section -->
-  <section class="content-cards-section">
-    <div class="content-cards-container">
-      <div class="content-cards">
-        <!-- Pilates Card -->
-        <div class="content-card">
-          <div class="card-image pilates-card">
-            <div class="card-logo fitness-logo">Fitness+</div>
-          </div>
-          <p class="card-title">Improve Your Posture with Pilates</p>
+        <div class="second-buttons">
+          <button class="button-1">Learn More</button>  
+          <button class="button-2">Buy</button> -->
+        <!-- Add CTA here if you have a second hero image/text -->
+      </section>
+
+      <section class="third">
+      
         </div>
+        <!-- Add CTA here if you have a third hero image/text -->
+      </section>
 
-        <!-- R&B Now Card -->
-        <div class="content-card">
-          <div class="card-image rnb-card">
-            <div class="card-logo music-logo">Music</div>
-            <!-- <h3 class="card-headline">R&B NOW</h3> -->
+      <section class="grid">
+        <!-- iPad Air -->
+        <aside class="grid-item pad">
+          <div class="content">
+            <h3>iPad Air</h3>
+            <p>Two sizes. Faster chip. Does it all.</p>
+            <div class="cta-buttons">
+              <button class="button-1">Learn more</button>
+              <button class="button-2">Buy</button>
+            </div>
           </div>
-          <p class="card-title">R&B Now</p>
-        </div>
+        </aside>
 
-        <!-- NBA 2K25 Card -->
-        <div class="content-card">
-          <div class="card-image nba-card">
-            <div class="card-logo arcade-logo">Arcade</div>
+        <!-- AirPods Pro 2 -->
+        <aside class="grid-item pod">
+          <div class="content">
+            <h3>AirPods Pro 2</h3>
+            <p>Now with a Hearing Aid feature.<sup>2</sup></p>
+            <div class="cta-buttons">
+              <button class="button-1">Learn more</button>
+              <button class="button-2">Buy</button>
+            </div>
           </div>
-          <p class="card-title">NBA 2K25 Arcade Edition</p>
-        </div>
+        </aside>
 
-        <!-- Strength with Kim Card -->
-        <div class="content-card">
-          <div class="card-image strength-card">
-            <div class="card-logo fitness-logo">Fitness+</div>
+        <!-- Apple Watch Series 10 -->
+        <aside class="grid-item watch">
+          <div class="content">
+            <div class="logo">
+              <span> WATCH</span>
+              <small>SERIES 10</small>
+            </div>
+            <p>Thinnest classic.</p>
+            <div class="cta-buttons">
+              <button class="button-1">Learn more</button>
+              <button class="button-2">Buy</button>
+            </div>
           </div>
-          <p class="card-title">Strength with Kim</p>
-        </div>
+        </aside>
 
-        <!-- Illustrated Vignettes Card -->
-        <div class="content-card">
-          <div class="card-image vignettes-card">
-            <div class="card-logo music-logo">Music</div>
+        <!-- MacBook Air -->
+        <aside class="grid-item macbook">
+          <div class="content">
+            <h3>MacBook Air</h3>
+            <p>Lean. Mean. M3 machine.</p>
+            <div class="cta-buttons">
+              <button class="button-1">Learn more</button>
+              <button class="button-2">Buy</button>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Trade In -->
+        <aside class="grid-item trade">
+          <div class="content">
+            <div class="logo"> Trade In</div>
+            <p>
+              Get $180–$650 in credit when you trade in iPhone 12 or higher.<sup
+                >3</sup
+              >
+            </p>
+            <div class="cta-buttons">
+              <button class="button-1">Get your estimate</button>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Apple Card -->
+        <aside class="grid-item card">
+          <div class="content">
+            <div class="logo"> Card</div>
+            <p>Get up to 3% Daily Cash back with every purchase.</p>
+            <div class="cta-buttons">
+              <button class="button-1">Learn more</button>
+              <button class="button-2">Apply now</button>
+            </div>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <!-- Apple TV and Carousel Section -->
+    <section class="tv-carousel-section">
+      <div class="tv-carousel">
+        <figure class="figure-1">
+          <img src="Public/assets/scroll2.jpg" alt="" />
+          <aside>
+            <p>
+              <span class="comedy-text">Comedy ·</span> Will they make
+              history…or fake it?
+            </p>
+            <button>Stream now</button>
+          </aside>
+        </figure>
+
+        <figure>
+          <img src="Public/assets/scroll1.png" alt="" />
+        </figure>
+
+        <figure>
+          <img src="Public/assets/scroll3.jpg" alt="" />
+        </figure>
+      </div>
+      <!-- Carousel Navigation Dots -->
+      <div class="carousel-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </section>
+
+    <!-- Content Cards Section -->
+    <section class="content-cards-section">
+      <div class="content-cards-container">
+        <div class="content-cards">
+          <!-- Pilates Card -->
+          <div class="content-card">
+            <div class="card-image pilates-card">
+              <div class="card-logo fitness-logo">Fitness+</div>
+            </div>
+            <p class="card-title">Improve Your Posture with Pilates</p>
+          </div>
+
+          <!-- R&B Now Card -->
+          <div class="content-card">
+            <div class="card-image rnb-card">
+              <div class="card-logo music-logo">Music</div>
+              <!-- <h3 class="card-headline">R&B NOW</h3> -->
+            </div>
+            <p class="card-title">R&B Now</p>
+          </div>
+
+          <!-- NBA 2K25 Card -->
+          <div class="content-card">
+            <div class="card-image nba-card">
+              <div class="card-logo arcade-logo">Arcade</div>
+            </div>
+            <p class="card-title">NBA 2K25 Arcade Edition</p>
+          </div>
+
+          <!-- Strength with Kim Card -->
+          <div class="content-card">
+            <div class="card-image strength-card">
+              <div class="card-logo fitness-logo">Fitness+</div>
+            </div>
+            <p class="card-title">Strength with Kim</p>
+          </div>
+
+          <!-- Illustrated Vignettes Card -->
+          <div class="content-card">
+            <div class="card-image vignettes-card">
+              <div class="card-logo music-logo">Music</div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-</body>
+    <script>
+      // Hamburger menu toggle
+      const hamburgerMenu = document.querySelector(".hamburger-menu");
+      const navMenu = document.querySelector(".nav-menu");
+
+      hamburgerMenu.addEventListener("click", () => {
+        hamburgerMenu.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener("click", (e) => {
+        if (!hamburgerMenu.contains(e.target) && !navMenu.contains(e.target)) {
+          hamburgerMenu.classList.remove("active");
+          navMenu.classList.remove("active");
+        }
+      });
+
+      // Close menu when clicking on a menu item
+      const menuItems = document.querySelectorAll(".nav-menu li");
+      menuItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          hamburgerMenu.classList.remove("active");
+          navMenu.classList.remove("active");
+        });
+      });
+    </script>
+  </body>
 </html>
