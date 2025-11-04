@@ -24,9 +24,6 @@ menuItems.forEach((item) => {
   });
 });
 
-
-const store = document.getElementsByTagName("#store-container");
-
-function goToStore(){ 
-  location.href = store;
+function goToStore() {
+  window.location.href = "store.html";
 }
