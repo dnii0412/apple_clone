@@ -1,0 +1,149 @@
+
+/* Header Navigation */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: rgba(245, 245, 247, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+header > nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 44px;
+  padding: 0 5%;
+}
+
+.nav-logo img {
+  height: 18px;
+}
+
+header > nav > ul {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+}
+
+header > nav > ul > li {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+header > nav > ul > li:hover {
+  opacity: 0.7;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.nav-icons img {
+  height: 18px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.nav-icons img:hover {
+  opacity: 0.7;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+  position: relative;
+}
+
+.hamburger-menu span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.hamburger-menu.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger-menu.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-menu.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Mobile Menu */
+.nav-menu {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+  transition: all 0.3s ease;
+}
+
+.nav-menu li {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.nav-menu li:hover {
+  opacity: 0.7;
+}
+
+/* Headline Banner */
+.nav-headline {
+  width: 100%;
+  min-height: 36px;
+  background-color: var(--headline-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--headline-text);
+  text-align: center;
+  padding: 8px 20px;
+  overflow: visible;
+}
+
+.nav-headline p {
+  margin: 0;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  alignment-baseline: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}

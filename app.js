@@ -23,6 +23,7 @@ menuItems.forEach((item) => {
     navMenu.classList.remove("active");
   });
 });
+ 
 
 function goToStore() {
   window.location.href = "store.html";
