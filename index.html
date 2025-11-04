@@ -65,7 +65,7 @@
           <h3>iPhone 16 Pro</h3>
           <p>Hello Apple Intelligence</p>
           <div class="cta-buttons">
-            <button class="button-1">Learn More</button>
+            <button onclick="goToStore()" class="button-1">Learn More</button>
             <button class="button-2">Buy</button>
           </div>
         </aside>
@@ -246,32 +246,7 @@
       </div>
     </section>
 
-    <script>
-      // Hamburger menu toggle
-      const hamburgerMenu = document.querySelector(".hamburger-menu");
-      const navMenu = document.querySelector(".nav-menu");
+    <script src="app.js"></script>
 
-      hamburgerMenu.addEventListener("click", () => {
-        hamburgerMenu.classList.toggle("active");
-        navMenu.classList.toggle("active");
-      });
-
-      // Close menu when clicking outside
-      document.addEventListener("click", (e) => {
-        if (!hamburgerMenu.contains(e.target) && !navMenu.contains(e.target)) {
-          hamburgerMenu.classList.remove("active");
-          navMenu.classList.remove("active");
-        }
-      });
-
-      // Close menu when clicking on a menu item
-      const menuItems = document.querySelectorAll(".nav-menu li");
-      menuItems.forEach((item) => {
-        item.addEventListener("click", () => {
-          hamburgerMenu.classList.remove("active");
-          navMenu.classList.remove("active");
-        });
-      });
-    </script>
   </body>
 </html>
