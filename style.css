@@ -249,6 +249,24 @@ main {
   opacity: 0.8;
 }
 
+/* Button styles for white background sections */
+.third .cta,
+.third .cta h3,
+.third .cta p {
+  color: var(--secondary-txt);
+}
+
+.third .button-1 {
+  background-color: var(--btn-bg);
+  color: #fff;
+}
+
+.third .button-2 {
+  background: transparent;
+  color: var(--secondary-txt);
+  border: 1px solid var(--secondary-txt);
+}
+
 /* Secondary Full-Width Sections */
 .second,
 .third {
@@ -265,7 +283,7 @@ main {
 }
 
 .second {
-  background-image: url("Public/assets/2.png");
+  /* background-image: url("Public/assets/background2.jpg"); */
   background-position: center;
   overflow: hidden;
   position: relative;
@@ -278,11 +296,33 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("Public/assets/2.png");
+  background-image: url("Public/assets/background2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   z-index: 0;
+}
+
+.second .cta {
+  position: relative;
+  z-index: 2;
+  margin-top: 54px;
+  color: var(--primary-txt);
+}
+
+.second .cta h3,
+.second .cta p {
+  color: var(--primary-txt);
+}
+
+.second .button-2 {
+  background: transparent;
+  color: var(--primary-txt);
+  border: 1px solid var(--primary-txt);
+}
+
+.second .button-2:hover {
+  opacity: 0.8;
 }
 
 .third {
@@ -405,6 +445,29 @@ main {
     font-size: 13px;
   }
 
+  .hero {
+    align-items: flex-end;
+    padding-bottom: 50px;
+  }
+
+  .second,
+  .third {
+    align-items: flex-end;
+    padding-bottom: 50px;
+  }
+
+  .hero .cta {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .second .cta {
+    position: relative;
+    z-index: 2;
+    margin-top: 54px;
+    margin-bottom: 0;
+  }
+
   .cta h3 {
     font-size: 48px;
   }
@@ -431,10 +494,20 @@ main {
     font-size: 20px;
   }
 
+  .tv-carousel {
+    height: 321px;
+  }
+
   .tv-carousel > figure,
   .figure-1 {
-    width: 900px;
-    height: 670px;
+    width: 600px;
+    height: 321px;
+  }
+
+  .tv-carousel > figure > img {
+    width: 600px;
+    height: 321px;
+    object-fit: cover;
   }
 
   .content-card {
@@ -539,20 +612,20 @@ main {
     min-height: 580px;
     position: relative;
     background-image: none;
+    align-items: flex-end;
+    padding-bottom: 40px;
   }
 
   .hero::before {
     content: "";
     position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100vh;
-    height: 100vw;
-    background-image: url("Public/assets/1.png");
+    width: 100%;
+    height: 100vh;
+    background-image: url("Public/assets/bg-1-resp.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    transform: translate(-50%, -50%) rotate(90deg);
+    /* transform: translate(-50%, -50%) rotate(90deg); */
     z-index: 0;
   }
 
@@ -563,26 +636,36 @@ main {
 
   .second,
   .third {
-    height: 580px;
+    min-height: 580px;
+    height: auto;
+    align-items: flex-end;
+    padding-bottom: 40px;
   }
 
   .second::before {
     content: "";
     position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100vh;
-    height: 100vw;
-    background-image: url("Public/assets/2.png");
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("Public/assets/bg-2-resp.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: center bottom;
     background-repeat: no-repeat;
-    transform: translate(-50%, -50%) rotate(-90deg);
+    transform: none;
     z-index: 0;
   }
 
   .second {
     background-image: none;
+    min-height: 650px;
+  }
+
+  .second .cta {
+    position: relative;
+    z-index: 2;
+    margin-top: 54px;
   }
 
   .cta h3 {
@@ -594,8 +677,9 @@ main {
   }
 
   .cta-buttons {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
   }
 
   .cta-buttons button {
@@ -633,13 +717,23 @@ main {
   }
 
   .tv-carousel > figure {
-    width: 274px;
-    height: 495px;
+    width: 340px;
+    height: 182px;
   }
   .tv-carousel > figure > img {
-    width: 274px;
-    height: 495px;
+    width: 340px;
+    height: 182px;
     object-fit: cover;
+  }
+
+  .figure-1 {
+    width: 340px;
+    height: 182px;
+  }
+
+  .figure-1 > img {
+    width: 340px;
+    height: 182px;
   }
 
   .content-card {
@@ -650,11 +744,48 @@ main {
   .content-card .card-image {
     width: 238px;
     height: 134px;
+    object-fit: cover;
   }
 }
 
 /* Small Mobile (up to 480px) */
 @media (max-width: 480px) {
+  .hero {
+    align-items: flex-end;
+    padding-bottom: 30px;
+  }
+
+  .second,
+  .third {
+    align-items: flex-end;
+    padding-bottom: 30px;
+    min-height: 600px;
+  }
+
+  .second::before {
+    background-position: center bottom;
+  }
+
+  .second {
+    min-height: 600px;
+  }
+
+  .second .cta {
+    position: relative;
+    z-index: 2;
+    margin-top: 54px;
+  }
+
+  .hero .cta {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .second .cta {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
   .cta h3 {
     font-size: 36px;
   }
@@ -675,10 +806,25 @@ main {
     font-size: 16px;
   }
 
-  .tv-carousel > figure,
+  .tv-carousel > figure {
+    width: 240px;
+    height: 128px;
+  }
+
+  .tv-carousel > figure > img {
+    width: 240px;
+    height: 128px;
+    object-fit: cover;
+  }
+
   .figure-1 {
-    width: 274px;
-    height: 495px;
+    width: 240px;
+    height: 128px;
+  }
+
+  .figure-1 > img {
+    width: 240px;
+    height: 128px;
   }
 
   .content-card {
@@ -719,8 +865,8 @@ main {
 
 .tv-carousel > figure {
   flex: 0 0 auto;
-  width: 1250px;
-  height: 670px;
+  width: 1000px;
+  height: 536px;
   position: relative;
   overflow: hidden;
   border-radius: 12px;
@@ -735,8 +881,8 @@ main {
 
 .figure-1 {
   position: relative;
-  width: 1250px;
-  height: 670px;
+  width: 1000px;
+  height: 536px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1033,7 +1179,7 @@ main {
 
 @media (max-width: 768px) {
   .tv-carousel {
-    height: 495px;
+    height: 182px;
   }
 
   .slide-content {
@@ -1056,7 +1202,7 @@ main {
 
 @media (max-width: 480px) {
   .tv-carousel {
-    height: 495px;
+    height: 128px;
   }
 
   .slide-content {
