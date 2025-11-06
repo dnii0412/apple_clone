@@ -671,8 +671,6 @@ main {
 
 /* Tablet and Mobile Navigation */
 
-
-
 @media (max-width: 1024px) {
   .hamburger-menu {
     display: flex;
