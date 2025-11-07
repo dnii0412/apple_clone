@@ -569,9 +569,11 @@ body {
   overflow: scroll;
   gap: 20px;
 }
-.sec-5-1{
-  width: 400px ;
+.sec-5-1-idl{
+  width: 400px;
   height: 500px;
+}
+.sec-5-1{
   background-position: center;
   background-size: cover;
   border-radius: 18px;
