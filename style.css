@@ -636,6 +636,8 @@ main {
   .tv-carousel {
     height: auto;
     min-height: 370px;
+    border-radius: 18px;
+
   }
 
   .tv-carousel > figure,
@@ -645,18 +647,26 @@ main {
     height: auto;
     aspect-ratio: 670 / 370;
     min-height: 370px;
+    border-radius: 18px;
+
   }
 
   .tv-carousel > figure:first-child {
     background-image: url("Public/assets/sec-5-1-resp.jpg");
+    border-radius: 18px;
   }
 
   .tv-carousel > figure:nth-child(2) {
     background-image: url("Public/assets/sec-5-2.jpg");
+    border-radius: 18px;
+    background-size: cover;
   }
 
   .tv-carousel > figure:nth-child(3) {
+    background-size: cover;
     background-image: url("Public/assets/sec-5-4.jpg");
+    border-radius: 18px;
+
   }
 
   .tv-carousel > figure > img {
@@ -666,6 +676,8 @@ main {
   .content-card {
     width: 350px;
     height: 236px;
+    border-radius: 18px;
+
   }
 }
 
@@ -1239,25 +1251,26 @@ main {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  overflow-x: auto;
-  overflow-y: hidden;
   gap: 12px;
   padding: 12px;
-  scrollbar-width: none;
-  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  display: flex;
+
 }
 
 .tv-carousel::-webkit-scrollbar {
-  display: none;
+  display: block;
 }
 
 .tv-carousel > figure {
   flex: 0 0 auto;
-  width: 1000px;
+  /* width: 1000px; */
   height: 536px;
   position: relative;
   overflow: hidden;
   border-radius: 12px;
+  scroll-snap-align: center;
 }
 
 .tv-carousel > figure > img {
