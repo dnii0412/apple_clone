@@ -1486,7 +1486,7 @@ main {
   max-width: 1440px;
   margin: 0 auto;
   -webkit-overflow-scrolling: touch;
-  scroll-behavior: auto;
+  scroll-behavior: smooth;
   position: relative;
   overscroll-behavior-x: contain;
   touch-action: pan-x;
